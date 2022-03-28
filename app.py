@@ -8,10 +8,6 @@ app = Flask(__name__, template_folder='view')
 def home():
     return render_template("index.html")
 
-# @app.route("/index")
-# def home():
-#     return render_template("index.html")
-
 @app.route("/login") #página de autenticação
 def login():
     return render_template("login.html") 
